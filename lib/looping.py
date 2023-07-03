@@ -18,14 +18,15 @@ def square_integers(int_list):
     return squared_list
 
 
+    
+def fizzbuzz():
+    for i in range(1, 101):
+        if not i % 5 and not i % 3:
+            print("FizzBuzz")
+        elif not i % 5:
+            print("Buzz")
+        elif not i % 3:
+            print("Fizz")
+        else:
+            print(i)
 
-
-def fizzbuzz(num):
-    if num % 3 == 0 and num % 5 == 0:
-        return "FizzBuzz"
-    elif num % 3 == 0:
-        return "Fizz"
-    elif num % 5 == 0:
-        return "Buzz"
-    else:
-        return num
